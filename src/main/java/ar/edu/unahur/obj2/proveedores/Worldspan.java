@@ -22,7 +22,7 @@ public class Worldspan {
         vuelos.add(new Vuelo(new DateTime("2019-12-13"), "BUE", "NYC", "LA900", 10, "Worldspan"));
     }
 
-    public List<Vuelo> searchFlights(String dia, String mes, String anio, final String origen, final String destino) {
+    public List<Vuelo> searchFlights(int dia, int mes, int anio, final String origen, final String destino) {
         final DateTime fecha = DateTime.parse(anio + "-" + mes + "-" + dia);
         return vuelos.stream()
                 .filter(v -> v.getFecha().equals(fecha)
