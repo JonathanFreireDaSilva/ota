@@ -1,6 +1,7 @@
 package ar.edu.unahur.obj2;
 
 import org.joda.time.DateTime;
+import org.testng.annotations.Test;
 
 import java.util.List;
 import java.util.Set;
@@ -10,6 +11,10 @@ import java.util.stream.Stream;
 import static org.testng.Assert.*;
 
 public class OtaTest {
+
+    DistribuidorDeTrafico dis = new DistribuidorDeTrafico();
+
+
 
     @org.testng.annotations.Test
     public void testBuscarVuelos() {
